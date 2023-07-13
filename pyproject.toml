@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling>=1.6.0,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example"
+description = "Example project"
+readme = "README.md"
+authors = [
+  {name = "Seth Michael Larson", email="sethmichaellarson@gmail.com"}
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "src/example/__init__.py"
